@@ -10,6 +10,7 @@ import {createStore} from "redux";
 import reducer from "./reducer"
 // react-redux - Provider - wraps app , conntect - used in components
 import {Provider} from 'react-redux';
+import HomeAlert from "./components/HomeAlert";
 // initial store
 // const initialStore = {
 //   cart: cartItems,
@@ -27,6 +28,7 @@ function App() {
   return (
     <main>
       <Provider store={store}>
+      <HomeAlert />
       <Navbar />
       <CartContainer />
       </Provider>
